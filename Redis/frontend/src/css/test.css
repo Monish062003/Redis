@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+
+}
+
+/* .db_images{
+    display: inline-block;
+} */
+
+.db_images img{
+    position: relative;
+    width: 130px;
+    height: 80px;
+    margin: 40px ;
+    padding: 0 0 0 85px;
+
+}
+
+.mongo_img{
+    position: absolute;
+    width: 280px;
+    height: 180px;
+    left: -35px;
+}
+
+
+.input{
+    position: absolute;
+    width: 711px;
+    height: 38px;
+    top: 191px;
+    left: 420px;
+    border-radius: 5px;    
+border: 1px solid #000000;
+background-color: #D9D9D9;
+
+}
+
+.select1{
+position: absolute;
+width: 132px;
+height: 38px;
+top: 191px;
+left: 100px;
+border-radius: 5px;
+text-align: center;
+background-color: #D9D9D9;
+}
+
+.select2{
+position: absolute;
+width: 132px;
+height: 38px;
+top: 250px;
+left: 100px;
+border-radius: 5px;
+text-align: center;
+background-color: #D9D9D9;
+
+}
+
+.test_btn{
+position: absolute;
+width: 132px;
+height: 38px;
+top: 300px;
+left: 100px;
+border-radius: 5px;
+background-color: #000000;
+color: white;
+border: 2px solid #000000;
+}
+
+.test_btn:hover{
+    background-color: #292828;
+
+}
+
+
+input[type="file"]{
+position: absolute;
+display: none;
+width: 200px;
+height: 50px;
+top: 250px;
+left: 420px;
+font-size: 16px;
+}
+
+#level_btn{
+position: absolute;
+display: none;
+width: 132px;
+height: 12px;
+top: 250px;
+left: 420px;
+display: inline-block;
+color: #000000;
+border: 1px solid #000000;
+text-align: center;
+padding: 12px 10px 15px;
+font-size: 16px;
+user-select: none;
+cursor: pointer;
+border-radius: 5px;
+}
+
+label img{
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+label:active{
+    transform: scale(0.9);
+}
+
+.radioBtn{
+position: absolute;
+width: 546px;
+height: 35.52px;
+top: 260px;
+left: 850px;
+}
+
+#db1{
+    margin-right: 8px;
+    accent-color: #ABEF93;
+    cursor: pointer;
+}
+
+#db2{
+    margin-left: 50px;
+    left: 1890;
+    margin-right: 8px;
+    accent-color: #ED7777;
+    cursor: pointer;
+}
+
+.dino_img{
+    position: relative;
+display: block;
+width: 180px;
+height: 180px;
+top: 220px;
+margin-left: auto;
+margin-right: auto;
+
+
+}
+
+.swords_img{
+position: absolute;
+width: 91px;
+height: 91px;
+top: 800px;
+left: 1100px;
+z-index: 10;
+}
+
+.battle{
+position: absolute;
+width: 310px;
+height: 66px;
+top: 810px;
+left: 820px;
+border-radius: 9.3px;
+border: 0.93px;
+background: linear-gradient(0deg, #2E2A2A, #2E2A2A),
+linear-gradient(0deg, #523939, #523939);
+border: 0.93px solid #523939;
+
+}
+
+.battle h4{
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-left: -15px;
+    font-family: 'Poppins';
+
+    
+}
