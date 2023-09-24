@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/battle.css'
-import Back from '../img/icons8-back-to-50.png'
+import Back from '../img/prev.png'
 import Upload from '../img/upload.png'
 import Redis from '../img/redis.png'
 import Leaf from '../img/leaf.png'

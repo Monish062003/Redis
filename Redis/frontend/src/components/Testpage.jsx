@@ -12,10 +12,10 @@ export default function testpage() {
   return (
     <div>
       <div className="db_images">
-        <img src={Docker} alt="docker" />
-        <img src={Redis} alt="redis" />
+        <img className='doc_img' src={Docker} alt="docker" />
+        <img className='red_img' src={Redis} alt="redis" />
         <img className="mongo_img" src={Mongo} alt="mongo" />
-        <img src={Node} alt="node" />
+        <img className='node_img' src={Node} alt="node" />
       </div>
 
       <input type="text" className="input" />
@@ -42,9 +42,9 @@ export default function testpage() {
 
         <div className="radioBtn">
           <input type="radio" id="db1" name="redis" value="with_redis" />
-          with Redis
+          With Redis
           <input type="radio" id="db2" name="redis" value="without_redis" />
-          without Redis
+          Without Redis
         </div>
       </form>
 
@@ -52,9 +52,14 @@ export default function testpage() {
 
       <img className="swords_img" src={Swords} alt="swords" />
 
-      <div className="battle">
-        <h4>Head on to the Battle Page</h4>
-      </div>
+      
+
+    <button className="battle" type="button"><h5>Head on to the Battle Page</h5>
+    </button>
+
     </div>
+
+
+    
   )
 }
