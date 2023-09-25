@@ -227,15 +227,18 @@ input[type="radio"]{
 
 
 .dino_img{
-position: relative;
-display: flex;
-display: block;
-width: 120px;
-height: 120px;
-top: -20px;
-left: 120px;
-margin: auto;
-
+    height: 137px;
+    position: relative;
+    display: flex;
+    display: block;
+    height: 149px;
+    height: 120px;
+    top: -20px;
+    left: 120px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
 }
 
 .swords_img{
