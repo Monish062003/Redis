@@ -18,7 +18,9 @@ export default function testpage() {
         <img className='node_img' src={Node} alt="node" />
       </div>
 
-      <input type="text" className="input" />
+      <input type="text" className="input_txt" /> 
+      
+      <div className='select_tag'>
 
       <select className="select1">
         <option value="post">POST</option>
@@ -32,30 +34,38 @@ export default function testpage() {
       </select>
 
       <button className="test_btn" type="button">Test</button>
+      </div>
 
-      <form>
+      
+      <div className='uploadBtn'>
         <input type="file" accept=".json" id="upload_btn" />
         <label htmlFor="upload_btn" id="level_btn">
           <img src={Upload} alt="Upload JSON" />
           Upload JSON
         </label>
-
-        <div className="radioBtn">
-          <input type="radio" id="db1" name="redis" value="with_redis" />
-          With Redis
-          <input type="radio" id="db2" name="redis" value="without_redis" />
-          Without Redis
         </div>
-      </form>
-
-      <img className="dino_img" src={Dion} alt="dino" />
-
-      <img className="swords_img" src={Swords} alt="swords" />
 
       
 
+      <div className="radio_btn">
+    <label>
+        <input id="db1" type="radio" name="gender" value="male" /> With Redis
+    </label>
+    
+    <label>
+        <input id="db2" type="radio" name="gender" value="female" /> Without Redis
+    </label>
+</div>
+
+      <img className="dino_img" src={Dion} alt="dino" />
+
+
+
+    <div className='bt_btn'>
+    <img className="swords_img" src={Swords} alt="swords" />
     <button className="battle" type="button"><h5>Head on to the Battle Page</h5>
     </button>
+    </div>
 
     </div>
 

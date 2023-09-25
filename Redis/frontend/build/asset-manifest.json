@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d6983752.css",
+    "main.js": "/static/js/main.730bf3fc.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/cassandra.png": "/static/media/cassandra.bf1da1dcf5dfde69d0c8.png",
+    "static/media/redis.png": "/static/media/redis.b530e8ca567aef9f0cf9.png",
+    "static/media/nodejs.png": "/static/media/nodejs.d980d9636ace07ad3dde.png",
+    "static/media/swords.png": "/static/media/swords.ff54160c2174d08d02aa.png",
+    "static/media/pngegg.png": "/static/media/pngegg.911d600323e9c405d0db.png",
+    "static/media/dino.png": "/static/media/dino.b92fbd2fca8bc483602d.png",
+    "static/media/leaf.png": "/static/media/leaf.c20e1bc7e958c8db307f.png",
+    "static/media/docker.png": "/static/media/docker.7fadbc97e4a5ae55a2e0.png",
+    "static/media/battle.png": "/static/media/battle.d2bbe62dc9f80be9c216.png",
+    "index.html": "/index.html",
+    "main.d6983752.css.map": "/static/css/main.d6983752.css.map",
+    "main.730bf3fc.js.map": "/static/js/main.730bf3fc.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6983752.css",
+    "static/js/main.730bf3fc.js"
+  ]
+}

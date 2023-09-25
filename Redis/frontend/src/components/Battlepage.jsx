@@ -15,11 +15,13 @@ export default function battlepage() {
     <h1 className="heading">BATTLEGROUND</h1>
 
     <form>
+    <div className='uploadBtnn'>
       <input type="file" accept=".json" id="uploadBtn" />
       <label htmlFor="uploadBtn" id="levelBtn">
         <img src={Upload} alt="Upload JSON" />
         Upload JSON
       </label>
+      </div>
     </form>
 
     <div className="radis_box">
