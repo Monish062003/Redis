@@ -39,7 +39,7 @@ export default function Battlepage() {
           text:result
         }),
       });
-  
+
       let response2=await fetch("/cassandrabattle",{
         method:"POST",
         headers:{
@@ -51,14 +51,20 @@ export default function Battlepage() {
       });
 
       response1 = await response1.json();
-      response2 = await response2.json();
-      
       let redis_result=[];
-      for (let index = 0; index < response1.starttime.length; index++) {
+      for (let index = 0; index < response1.endtime.length; index++) {
         redis_result.push(response1.endtime[index]-response1.starttime[index])      
       }
-      alert(redis_result)
-      alert(response1.endtime[(response1.endtime.length)-1]-start_time)
+      
+      response2 = await response2.json();
+      
+
+      let cass_result=[];
+      for (let index = 0; index < response2.endtime.length; index++) {
+        cass_result.push(redis_result[index]+response2.endtime[index])      
+      }
+      alert([...redis_result])
+      alert([...cass_result])
     })
   }
 

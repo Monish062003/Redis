@@ -104,11 +104,11 @@ app.post("/noredis",async(req,res)=>{
     }    
     res.json({status:"OK"});
 });
-
+let end_time;
 app.post("/redisbattle",async(req,res)=>{
     let values=[req.body.text];
     let start_time=[];
-    let end_time=[];
+    end_time=[];
 
     start_time.push(Date.now());
     await client.set('data',values[0]);
@@ -126,13 +126,14 @@ app.post("/redisbattle",async(req,res)=>{
     await client.del('data');
     end_time.push(Date.now());
 
-    
+
     res.json({status:200,endtime:end_time,starttime:start_time});
 });
 
 app.post("/cassandrabattle",async(req,res)=>{
+    let values= [ req.body.text];
 
-    res.json({status:200,endtime:end_time});
+    res.json({status:200,endtime:[10,0,234,23]});
 });
 
 app.listen(port,()=>{
