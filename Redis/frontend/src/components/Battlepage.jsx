@@ -6,6 +6,8 @@ import Redis from '../img/redis.png'
 import Leaf from '../img/leaf.png'
 import Cassandra from '../img/cassandra.png'
 import Battle from '../img/battle.png'
+import { Link } from 'react-router-dom'
+
 
 export default function Battlepage() {
   const[file,setfile]=useState();
@@ -19,6 +21,7 @@ export default function Battlepage() {
         localStorage.setItem('size',fileSizeInBytes);
       }
   }
+
 
   let launch=()=>{
     let start_time=Date.now();
@@ -61,21 +64,20 @@ export default function Battlepage() {
 
   return (
     <div>
-    <img className="back_btn" src={Back} alt="back" />
+    <Link to="/"><img className="back_btn" src={Back} alt="back" /></Link>
 
     <h1 className="heading">BATTLEGROUND</h1>
 
-    <form>
+    
     <div className='uploadBtnn'>
-      <input type="file" id="uploadBtn" onChange={aimbutton} />
+      <input type="file" id="uploadBtn" onChange={aimbutton}/>
       <label htmlFor="uploadBtn" id="levelBtn">
         <img src={Upload} alt="Upload JSON" />
         Upload JSON
       </label>
       </div>
-    </form>
 
-    <div className="radis_box">
+      <div className="radis_box">
       <img className="radis_img" src={Redis} alt="radis" />
       <img className="leaf_img" src={Leaf} alt="leaf" />
     </div>

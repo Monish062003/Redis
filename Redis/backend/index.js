@@ -11,7 +11,7 @@ app.use(express.urlencoded());
 app.use(bodyParser.json());
 
 const client = Redis.createClient({
-    port: 6880,
+    port: 6881,
     host: "localhost",
   });
 

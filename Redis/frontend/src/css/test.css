@@ -59,9 +59,10 @@
 
 .input_txt {
     position: relative;
+    font-weight: normal;
     width: 740px;
     height: 38px;
-    text-align: center;
+    /* text-align: center; */
     top: 25px;
     left: 190px; 
     border-radius: 5px;    
@@ -71,20 +72,36 @@ background-color: #D9D9D9;
 }
 
 
-select{
+/* select{
     display: flex;
     display: block;
     margin: auto;
+} */
+
+.container{
+    display: flex;
+}
+
+.container select{
+    display: block;
+    margin: 0 0 0 80px;
+
+    
+
 }
 
 .select1{
 position: relative;
 width: 132px; 
-height: 39px;
-top: -14px; 
-left: -500px; 
+height: 38px;
+/* top: -14px; 
+left: -500px;  */
+top: -5px;
+/* left: -70px; */
+margin-left: 300px;
 border-radius: 5px;
 text-align: center;
+cursor: pointer;
 background-color: #D9D9D9;
 }
 
@@ -93,25 +110,30 @@ background-color: #D9D9D9;
 position: relative;
 width: 132px;
 height: 39px;
-top: -5px;
-left: -500px;
+/* top: -5px;
+left: -500px; */
+top: 50px;
+left: -215px;
 border-radius: 5px;
 text-align: center;
+cursor: pointer;
 background-color: #D9D9D9;
 
 }
 
 .test_btn{
 position: relative;
-display: flex;
+/* display: flex;
 margin: auto;
-display: block;
+display: block; */
 width: 132px;
 height: 38px;
-top: 10px;
-left: -500px;
+top: 100px;
+/* top: 10px; */
+left: -348px;
 /* right: 1100px; */
 border-radius: 5px;
+cursor: pointer;
 background-color: #000000;
 color: white;
 border: 2px solid #000000;
@@ -140,13 +162,13 @@ left: 420px;
 position: relative;
 width: 132px;
 height: 12px;
-top: -70px;
-left: -100px;
+top: 5px;
+left: -105px;
 display: inline-block;
 color: #000000;
 border: 1px solid #000000;
 text-align: center;
-padding: 12px 10px 15px;
+padding: 8px 10px 18px;
 font-size: 16px;
 user-select: none;
 cursor: pointer;
@@ -164,38 +186,6 @@ label:active{
     transform: scale(0.9);
 }
 
-/* input[type='radio']{
-    position: relative;
-    width: 20px;
-    height: 20px;
-    top: -20px;
-    padding: 10px;
-    
-}
-
-.radioBtn{
-position: relative;
-width: 546px;
-height: 35.52px;
-top: -125px;
-left: 800px;
-font-size: 20px;
-font-weight: normal;
-}
-
-#db1{
-    margin-right: 8px;
-    accent-color: #ABEF93;
-    cursor: pointer;
-}
-
-#db2{
-    margin-left: 50px;
-    left: 1890;
-    margin-right: 8px;
-    accent-color: #ED7777;
-    cursor: pointer;
-} */
 
 .radio_btn{
     display: flex;
@@ -211,7 +201,7 @@ input[type="radio"]{
 
 .radio_btn label{
     position: relative;
-    top: -100px;
+    top: -20px;
     margin: 20px;
     left: 300px;
     font-weight: normal;
@@ -227,18 +217,15 @@ input[type="radio"]{
 
 
 .dino_img{
-    height: 137px;
-    position: relative;
-    display: flex;
-    display: block;
-    height: 149px;
-    height: 120px;
-    top: -20px;
-    left: 120px;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    text-align: center;
+position: relative;
+display: flex;
+display: block;
+width: 120px;
+height: 120px;
+top: 40px;
+left: 120px;
+margin: auto;
+
 }
 
 .swords_img{
@@ -248,9 +235,23 @@ display: block;
 margin: auto;
 width: 60px;
 height: 60px;
-top: 20px;
+top: 90px;
 left: 545px;
 z-index: 10;
+}
+
+
+.bt_btn:hover .swords_img{
+    width: 70px;
+    height: 70px;
+}
+
+.bt_btn:hover .battle{
+    width: 270px;
+    width: 270px;
+    height: 40;
+    font-size: 18px;
+    padding-right: 28px;
 }
 
 .battle{
@@ -258,10 +259,11 @@ position: relative;
 display: flex;
 display: block;
 margin: auto;
+cursor: pointer;
 
 width: 210px;
 height: 40px;
-top: -30px;
+top: 40px;
 left: 424px;
 border-radius: 9.3px;
 border: 0.93px;
@@ -270,6 +272,8 @@ linear-gradient(0deg, #523939, #523939);
 border: 0.93px solid #523939;
 
 }
+
+
 
 .battle h5{
     color: white;

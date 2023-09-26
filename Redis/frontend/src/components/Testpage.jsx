@@ -102,6 +102,10 @@ export default function Testpage() {
     }
   }
 
+  let direct=()=>{
+    window.location.href="http://localhost:3000/battle";
+  }
+
   let Test=async()=>{
     let result;
     if (text) {
@@ -128,7 +132,7 @@ export default function Testpage() {
 
       <input type="text" className="input_txt" value={text} onChange={handleChange} /> 
       
-      <div className='select_tag'>
+      <div className='container'>
 
       <select className="select1">
         <option value="post">POST</option>
@@ -146,7 +150,7 @@ export default function Testpage() {
 
       
       <div className='uploadBtn'>
-        <input type="file" id="upload_btn" onChange={UploadBtn}/>
+        <input type="file"  id="upload_btn" onChange={UploadBtn}/>
         <label htmlFor="upload_btn" id="level_btn">
           <img src={Upload} alt="Upload JSON" />
           Upload JSON
@@ -163,24 +167,23 @@ export default function Testpage() {
     <label>
         <input id="db2" type="radio" name="gender" value="1" /> Without Redis
     </label>
-</div>
+  </div>
 
-      <div className="samurai">
-        <img className="dino_img" src={neutral} alt="dino" />
-        {texto}
-      </div>
+    <div className="samurai">
+      <img className="dino_img" src={neutral} alt="dino" />
+      {texto}
+    </div>
 
 
 
     <div className='bt_btn'>
-    <img className="swords_img" src={Swords} alt="swords" />
-    <button className="battle" type="button"><h5>Head on to the Battle Page</h5>
+      <img className="swords_img" src={Swords} alt="swords"  onClick={direct}/>
+      <button className="battle" type="button" onClick={direct}>
+        <h5>Head on to the Battle Page</h5>
     </button>
     </div>
 
-    </div>
+  </div>
 
-
-    
   )
 }
